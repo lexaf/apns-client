@@ -44,7 +44,8 @@ class BaseCertificate(object):
             cert_string=cert_string,
             cert_file=cert_file,
             key_string=key_string,
-            passphrase=passphrase
+            passphrase=passphrase,
+            key_file=key_file
         )
         if self.equality_check is None:
             self._equality = self.dump_certificate(cert)
